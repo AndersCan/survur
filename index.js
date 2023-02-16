@@ -2,19 +2,9 @@ import path from "path";
 import fs from "fs/promises";
 import fsSync from "fs";
 import { createReadStream } from "fs";
-import {
-  intro,
-  outro,
-  multiselect,
-  isCancel,
-  cancel,
-  text,
-} from "@clack/prompts";
-import { fileURLToPath } from "url";
+import { intro, outro, multiselect, isCancel, cancel } from "@clack/prompts";
 import { createServer } from "http";
 import { pipeline } from "stream";
-
-const __dirname = fileURLToPath(new URL(".", import.meta.url));
 
 main();
 async function main() {
