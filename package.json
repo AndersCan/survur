@@ -1,0 +1,25 @@
+{
+  "name": "survur",
+  "version": "1.0.0",
+  "description": "Serve some folders and files",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "survur": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@clack/prompts": "^0.2.2"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.4"
+  },
+  "prettier": {
+    "printWidth": 80
+  }
+}
