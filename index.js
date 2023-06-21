@@ -98,6 +98,9 @@ async function main() {
         return;
       }
 
+      res.writeHead(200, {
+        "Access-Control-Allow-Origin": "*",
+      });
       pipeline(createReadStream(requestPathOnDisk), res, (err) => {
         if (err) {
           console.error("oh no!", err);
