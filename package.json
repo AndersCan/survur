@@ -1,6 +1,6 @@
 {
   "name": "survur",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Serve some folders and files",
   "main": "index.js",
   "type": "module",
