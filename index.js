@@ -66,7 +66,7 @@ async function main() {
 
         res.writeHead(200, {
           "content-type": "text/html",
-          "Acess-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Origin": "*",
         });
         res.write(wrapHtml(requestPathOnDisk, `<ul>${html.join("")}</ul>`));
         res.end();
@@ -76,7 +76,7 @@ async function main() {
       if (!isValid || !exists) {
         console.log(requestPath, "no match", urlPaths, { exists });
         res.writeHead(404, {
-          "Acess-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Origin": "*",
         });
         res.end();
         return;
@@ -91,7 +91,7 @@ async function main() {
         });
         res.writeHead(200, {
           "content-type": "text/html",
-          "Acess-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Origin": "*",
         });
         res.write(wrapHtml(requestPath, `<ul>${html.join("")}</ul>`));
         res.end();
@@ -109,7 +109,7 @@ async function main() {
       console.error(err);
       res.writeHead(500, {
         "content-type": "text/html",
-        "Acess-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Origin": "*",
       });
       res.write(wrapHtml("Oh no...", `<pre>${err.toString()}</pre>`));
       res.end();
